@@ -2,6 +2,8 @@
 
 This project is an interactive map of a portion of Lexington, Kentucky's East End neihborhood developed through QGIS and Mapbox. It georeferenced images of fire insurance maps from 1934 and 1958 over present-day satellite imagery to show where the old Kentucky Association thoroughbred racetrack and Bluegrass-Aspendale housing projects used to be. Users can interact with both maps by zooming in and panning across the highly detailed historical maps and interpret how dramatically the area has changed over the past hundred years.
 
+![Aerial image of old racetrack being redeveloped into federal housing, 1937](aerial.png)
+
 ## Data
 
 The high-resoltion TIFF images used in this project came from the digital collections of the Library of Congress:
@@ -11,11 +13,17 @@ The high-resoltion TIFF images used in this project came from the digital collec
 ## Process
 
 Once the historic map scans were acquired, I stitched the different pages from the same year into one large and continuous image on Photoshop using tools like Puppet Warp.
+
 ![Process screenshot of image stitching in Photoshop](process1.png)
+
 <br/>
+
 Next, I used the raster tools in QGIS 3.22.5 on Windows 10 to georeference the two combined images (from 1934 and 1958) with the help of a Google Maps satellite basemap. Fortunately, although the East End has gone through multiple phases of urban renewal, each page of the Sanborn maps had at least a few property boundaries that had remained constant since the 1930s. Therefore, I was also able to use the Lexington-Fayette Urban County Government's official [parcel shapefiles](https://data.lexingtonky.gov/datasets/e4a525d8772741468205e82fc173db22_0/explore) to match certain features to the corresponding coordinates.
+
 ![Process screenshot of georeferencing in QGIS](process2.png)
+
 <br/>
+
 Finally, I uploaded the georeferenced TIFF files as tilesets in Mapbox and created a new style that uses satellite imagery and basic street and place name labels as the basemap.
 
 ## Improvements
