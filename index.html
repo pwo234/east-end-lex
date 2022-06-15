@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Mapping Lexington East End History</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <base target="_blank">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: darkslategray;
+            font-family: 'Open Sans';
+            font-weight: 300;
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Open Sans';
+            font-weight: 900i;
+            font-size: 2.8em;
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            color: whitesmoke;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            color: lightblue;
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            color: #63666a;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #3d3d3d;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 75px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="first-column">
+            <iframe src="map34.html" width="100%" height="480px"></iframe>
+            <iframe src="map58.html" width="100%" height="480x"></iframe>
+        </div>
+        <div class="column">
+            <h1>Mapping Lexington, Kentucky's East End, 1934-1958</h1>
+            <h2>Piotr Wojcik (June 2022)</h2>
+            <p>
+                This pair of maps helps illustrate how dramatically Lexington's
+                East End changed in the middle of the 20th century and how
+                little remains of two major sites in the neighborhood: the
+                Kentucky Association racetrack (top, 1934 - <a href=map34.html>full screen</a>) 
+                and the Bluegrass-Aspendale public housing projects 
+                (bottom, 1958 - <a href=map58.html>full screen</a>).
+                Only the faintest traces of either are visible in today's landscape
+                (see photo below). Please feel free to zoom in on each map to see how
+                they compare to today's urban layout based on the satellite imagery
+                in the background.
+            </p>
+            <p>
+                These interactive maps were made by georeferencing digital 
+                scans of historic fire insurance maps from the 
+                <a href="https://loc.gov/maps">Library of Congress</a>
+                using <a href="https://qgis.org/en/site">QGIS 3.22.5</a> 
+                on Windows 10 and then uploading custom tilesets to 
+                <a href="https://www.mapbox.com">Mapbox</a>. 
+                Read more about the data and process for making these maps 
+                <a href=readme.md>here</a>.
+            </p>
+            <br/>
+            <img src="landscape.jpeg" width="100%"
+            alt="Author's photo of a grassy roundabout on North Shropshire Avenue in Lexington's East End">
+            <p>
+                See some of my other work on Github: <a href="https://github.com/pwo234">pwo234</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

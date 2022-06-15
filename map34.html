@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Mapping Lexington's East End, 1934-1958</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+
+<div id='map'></div>
+
+  <script>
+    // east-end-1934 access token
+    mapboxgl.accessToken =
+    'pk.eyJ1IjoicHdvamNpayIsImEiOiJjbDQzNXJ4c2MwMTJtM2lwYndmYThqcTY3In0.Cp69u-GUNU6Rw9qqh5jN4A';
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/pwojcik/cl47ptie3003s14pctkceiva8',
+      zoom: 15.25,
+      center: [-84.479064, 38.044978]
+    });
+
+    // add geolocate control to the map.
+     map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
+  </script>
+
+</body>
+
+</html>
