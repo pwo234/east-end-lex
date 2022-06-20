@@ -1,6 +1,6 @@
 # Mapping changes in Lexington's East End, 1934-1958
 
-This project is an <a href="https://pwo234.github.io/east-end-lex/" target="_blank">interactive map</a> of a portion of Lexington, Kentucky's East End neihborhood developed through QGIS and Mapbox. It georeferenced images of fire insurance maps from 1934 and 1958 over present-day satellite imagery to show where the old Kentucky Association thoroughbred racetrack and Bluegrass-Aspendale housing projects used to be. Users can interact with both maps by zooming in and panning across the highly detailed historical maps and interpret how dramatically the area has changed over the past hundred years.
+This project is an <a href="https://pwo234.github.io/east-end-lex/" target="_blank">interactive map</a> of a portion of Lexington, Kentucky's East End neighborhood developed through QGIS and Mapbox. It georeferenced images of fire insurance maps from 1934 and 1958 over present-day satellite imagery to show where the old Kentucky Association thoroughbred racetrack and Bluegrass-Aspendale housing projects used to be. Users can interact with both maps by zooming in and panning across the highly detailed historical maps and interpret how dramatically the area has changed over the past hundred years.
 
 ![Aerial image of old racetrack being redeveloped into federal housing, 1937](aerial.png)
 (FDA aerial photograph of old racetrack being redeveloped into federal housing, 1937)
